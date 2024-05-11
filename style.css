@@ -1,0 +1,599 @@
+:root{
+    --primary: #007bff;
+    --lightprimary: #0056b3;
+    --white: : #ffffff;
+    --silver: #bcbcbc9e;
+    --defaultLinkColor: #333;
+    --yellow: #ffd700;
+    --muted: #777777;
+    --whiteBG: #f8fafc;
+
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+}
+section {
+    margin-top: 50px;
+}
+body {
+    position: relative;
+}
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0 10%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255 255 255 /0.9);
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    z-index: 10;
+}
+.section button {
+    display: flex;
+    background-color: white;
+
+    
+}
+.menu {
+    display: flex;
+    
+}
+.logo {
+    color: #27ae60;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.menu li {
+   margin: 0 15px;
+   list-style: none;
+}
+.menu li a {
+    font-size: 14px;
+    text-decoration: 0;
+    color: #999;
+    position: relative;
+}
+.menu li a::before {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    content: "";
+    width: 0;
+    height: 2px;
+    border-radius: 6px;
+    background-color: #27ae60;
+    transition: 0.5s;
+}
+.menu li a:hover::before {
+    width: 100%;
+}
+.menu li a::after {
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    content: "";
+    width: 0;
+    height: 2px;
+    border-radius: 6px;
+    background-color: #27ae60;
+    transition: 0.5s;
+}
+.menu li a:hover::after {
+    width: 100%;
+}
+.menu li a:hover {
+    color: #000;
+}
+
+#home {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: calc(100vh - 50px);
+    justify-content: space-between;
+}
+#home .left {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#home .left h4 {
+    font-size: 20px;
+    color: #27ae60;
+}
+#home .left h1 {
+    font-size: 40px;
+}
+#home .left p {
+    font-size: 12px;
+    color: #999;
+}
+#home .left button {
+     margin-top: 20px;
+     width: fit-content;
+     padding: 5px 10px;
+     background-color: blue;
+     border: 0;
+     transition: 0.5s;
+     position: relative;
+     cursor: pointer;
+}
+#home .left button  a {
+    text-decoration: 0;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+#home .left button::before {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    content: "";
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-color: #27ae60;
+}
+
+#home .left button:hover a{
+   letter-spacing: 1px;
+}
+
+#home .right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home .right img {
+    width: 100%;
+    animation: animate 2s linear;
+    transition: 0.5s;
+}
+
+
+
+#bas {
+    background-color: blue;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    /* margin-left: 10%;
+    margin-right: 10%; */
+    height: calc(30vh - 20px);
+    justify-content: space-between;
+}
+#bas .left {
+    margin-left: 10%;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+#bas .left h5 {
+    font-size: 20px;
+    color: #27ae60;
+}
+#bas .left h2 {
+    font-size: 40px;
+    color: white;
+
+}
+
+
+
+#bas .right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#bas .right img  {
+    
+    margin-right: 10%;
+    width: 30%;
+    background-color: white;
+}
+
+#bas .right  p {
+    
+    margin-right: 10%;
+    width: 30%;
+    
+}
+
+/* css provide */
+
+#provide {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: calc(100vh - 50px);
+    justify-content: space-between;
+}
+#provide .right {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#provide .right h2 {
+    font-size: 20px;
+    color: #27ae60;
+}
+
+#provide .right p {
+    font-size: 18px;
+    color: #250707;
+}
+
+
+
+
+#provide .left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#provide .left img {
+    width: 100%;
+    animation: animate 2s linear;
+    transition: 0.5s;
+}
+
+/* make CSS */
+                    
+#make {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: calc(100vh - 50px);
+    justify-content: space-between;
+    
+}
+#make .left {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+#make .right h1  {
+    font-size: 50px;
+    
+}    
+#make .right h1 span{
+    color: #17c047;
+}
+
+#make .left h2 {
+    font-size: 40px;
+}  
+
+.dishes {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: space-around;
+}
+.dishes .dish {
+    height: 280px;
+    width: 30%;
+    background-color: #fff;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 6px;
+    margin-bottom: 35px;
+    transition: 0.5s;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+}
+.dishes .dish  img {
+    width: 130px;
+    height: 120px;
+    margin-bottom: 15px;
+}
+.dishes .dish p {
+    text-align: center;
+    font-size: 18px;
+
+}
+
+.dishes .dish a {
+    margin-top: 10px;
+    font-size: 14px;
+    text-decoration: 0;
+    background-color: #27ae60;
+    padding: 5px 60px;
+    color: #fff;
+    border-radius: 6px;
+}
+
+.dish1 {
+    padding-top: 25px;
+    background-color: blue;
+    margin-top: 100px;
+    align-items: center;
+   
+    height: calc(60vh - 20px);
+    
+
+}
+.dish1 h1 {
+    justify-content: space-between;
+    text-align: center;
+    text-decoration: 0;
+    margin-top: 20px;
+    font-size: 20px;
+     /* margin-bottom: 5%; */
+    color: white;
+}
+.dish1 h1 span {
+    justify-content: space-between;
+    text-align: center;
+    text-decoration: 0;
+    margin-top: 10px;
+    font-size: 30px;
+     margin-bottom: 5%;
+    color: white;
+}
+
+.dish1 p {
+    justify-content: space-between;
+    text-align: center;
+    text-decoration: 0;
+    margin-top: 10px;
+    font-size: 15px;
+     margin-bottom: 5%;
+    color: white;
+}
+.dish1 button {
+    justify-content: space-between;
+    text-align: center;
+    text-decoration: 0;
+    font-size: 17px;
+    color: white;
+   
+     
+    background-color:transparent;
+    border-radius: 10px;
+    margin-left: 580px;
+    width: 20%;
+    height: 60px;
+
+}
+
+/* our History CSS */
+
+.container {
+    margin-top: 0%;
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: calc(30vh - 20px);
+    justify-content: space-between;
+    
+}
+.container .left {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.container .left h1  {
+    font-size: 50px;
+    
+}    
+.container .left h1 span{
+    color: #17c047;
+}
+
+.container .right h3 {
+    font-size: 30px;
+}  
+.container .right h1 {
+    font-size: 40px;
+
+}  
+.container::after {
+    position: absolute;
+    left: 20;
+    content: "";
+    width: 900px;
+    height: 1px;
+    background-color: #04140b;
+    margin-bottom: -60px;
+}
+
+.history {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.history h3 {
+    justify-content: space-between;
+
+    text-decoration: 0;
+    margin-top: 20px;
+    font-size: 25px;
+     margin-bottom: 5%;
+    color: rgb(20, 1, 1);
+}
+.history p {
+    justify-content: space-between;
+    text-decoration: 0;
+    margin-top: 20px;
+    font-size: 20px;
+     margin-bottom: 5%;
+    color: rgb(20, 1, 1);
+}
+
+
+/* meet our CSS */
+
+.doctors {
+    margin-top: 0%;
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: calc(30vh - 20px);
+    justify-content: space-between;
+    
+}
+.doctors .left {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.doctors .left h2  {
+    font-size: 35px;
+    
+}    
+.doctors .left h1  {
+
+    font-size: 50px;
+    
+}    
+
+
+
+
+.doctors .right h1 {
+    font-size: 40px;
+}  
+.doctors .right h1 span{
+    color: #17c047;
+
+}  
+.doctors::before {
+    position: absolute;
+    left: 370px;
+    content: "";
+    width: 1000px;
+    height: 1px;
+    background-color: #04140b;
+    margin-bottom: -60px;
+}
+
+.names {
+    /* background-color: red; */
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    
+}
+
+.names .doctors-name {
+    height: 300px;
+    width: 10%;
+   
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    border-radius: 6px;
+    margin-bottom: 35px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+}
+.names .doctors-name  img {
+    width: 200px;
+    height: 190px;
+    margin-bottom: 35px;
+}
+.names .doctors-name h1 {
+   
+    text-align: center;
+    font-size: 13px;
+
+}
+
+
+.doctors-name {
+    padding-top: 20px;
+    
+    margin-top: 100px;
+    align-items: center;
+   
+    height: calc(30vh - 100px);
+    
+
+}
+.doctors-name h1 {
+    justify-content: space-between;
+    text-align: center;
+    text-decoration: 0;
+    margin-top: 20px;
+    font-size: 20px;
+     margin-bottom: 5%;
+    color: #777777;
+}
+
+.doctors-name button {
+    justify-content: space-between;
+    text-align: center;
+    text-decoration: 0;
+    font-size: 17px;
+    color: #007bff;
+   
+     
+    background-color:transparent;
+    border-radius: 10px;
+    
+    width: 150%;
+    height: 45px;
+    margin-top: 40px;
+
+}

@@ -27,6 +27,7 @@ html {
     scroll-behavior: smooth;
     font-size: 62.5%;
 }
+
 header {
     display: flex;
     align-items: center;
@@ -41,9 +42,22 @@ header {
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
     z-index: 10;
 }
+header button {
+    justify-content: space-between;
+    text-align: center;
+    text-decoration: 0;
+    font-size: 17px;
+    background-color: #007bff;
+    color: #f8fafc;
+    width: 150%;
+    height: 60px;
+    border-radius: 12px;
+   
+}
 .section button {
     display: flex;
     background-color: white;
+    
 
     
 }
@@ -120,29 +134,65 @@ header {
     color: #27ae60;
 }
 #home .left h1 {
-    font-size: 40px;
+    font-size: 45px;
+    margin-bottom: 40px;
 }
 #home .left p {
-    font-size: 12px;
+    font-size: 18px;
+    line-height: 1.5;
     color: #999;
+    margin-bottom: 40px;
 }
-#home .left button {
-     margin-top: 20px;
-     width: fit-content;
-     padding: 5px 10px;
-     background-color: blue;
-     border: 0;
-     transition: 0.5s;
-     position: relative;
-     cursor: pointer;
+.button-container {
+    display: flex;
+  }
+  
+  .space {
+    width: 50px; 
+  }
+  
+  .button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .button1 {
+    background-color: #007bff;
+    color: white;
+    border-radius: 8px;
+    width: 180px;
+    height: 50px;
+    font-size: 16px;
+  }
+  
+  .button2 {
+    background-color: transparent; 
+    color: rgb(33, 7, 7);
+    border-radius: 8px;
+    width: 180px;
+    height: 50px;
+    font-size: 16px;
+  }
+
+
+/* #home .left button {
+    justify-content: space-between;
+    text-align: center;
+    text-decoration: 0;
+    font-size: 17px;
+    background-color: #007bff;
+    color: #f8fafc;
+    width: 30%;
+    height: 50px;
 }
-#home .left button  a {
+/* #home .left button  a {
     text-decoration: 0;
     color: #fff;
-    font-weight: bold;
-    text-transform: uppercase;
+    /* font-weight: bold; */
+    /* text-transform: uppercase; */
     transition: 0.5s;
-}
+} */ */
 
 #home .left button::before {
     position: absolute;
@@ -153,6 +203,10 @@ header {
     width: 100%;
     z-index: -1;
     background-color: #27ae60;
+}
+
+#home span {
+    color: #ffd700;
 }
 
 #home .left button:hover a{
@@ -176,7 +230,7 @@ header {
 
 
 #bas {
-    background-color: blue;
+    background-color: #007bff;
     margin-top: 50px;
     display: flex;
     align-items: center;
@@ -185,6 +239,68 @@ header {
     height: calc(30vh - 20px);
     justify-content: space-between;
 }
+.services_list {
+
+    padding: 10px 10%;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    text-align: center;
+  
+    margin-left: 0%;
+    margin-right: 5%;
+   
+ 
+}
+.service img {
+
+    width: 40px;
+    
+    padding: 10px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+
+}
+.service {
+    background-color: #f8fafc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 30px auto;
+    margin: 20px;
+    height: 100px;
+    border-radius: 12px;
+
+}
+.service1 {
+    border-radius: 12px;
+    background-color: #f8fafc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 30px auto;
+    margin: 20px;
+    height: 100px;
+
+}
+.service2 {
+    background-color: #f8fafc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 30px auto;
+    margin: 20px;
+    height: 100px;
+    border-radius: 12px;
+
+}
+.service  p {
+    color: #333;
+}
 #bas .left {
     margin-left: 10%;
     width: 40%;
@@ -192,41 +308,25 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: white;
+    color: #f8fafc;
 }
 #bas .left h5 {
     font-size: 20px;
-    color: #27ae60;
+    color: #f8fafc;
 }
 #bas .left h2 {
     font-size: 40px;
-    color: white;
+    color: #f8fafc;
 
 }
 
 
 
-#bas .right {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-#bas .right img  {
-    
-    margin-right: 10%;
-    width: 30%;
-    background-color: white;
-}
 
-#bas .right  p {
-    
-    margin-right: 10%;
-    width: 30%;
-    
-}
+
+
+
 
 /* css provide */
 
@@ -245,16 +345,25 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
 }
-#provide .right h2 {
+.right .right-bottom{
+    display: flex;
+}
+.shield-top {
+    display: flex;
+}
+/* #provide .right h2 {
     font-size: 20px;
     color: #27ae60;
 }
 
 #provide .right p {
-    font-size: 18px;
+    font-size: 17px;
     color: #250707;
-}
+    margin-left: 25px;
+    margin-bottom: ;
+} */
 
 
 
@@ -269,13 +378,12 @@ header {
 
 #provide .left img {
     width: 100%;
-    animation: animate 2s linear;
-    transition: 0.5s;
+ 
 }
 
 /* make CSS */
                     
-#make {
+section #make {
     margin-top: 50px;
     display: flex;
     align-items: center;
@@ -285,7 +393,25 @@ header {
     justify-content: space-between;
     
 }
-#make .left {
+.contener {
+    margin-top: 0%;
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: calc(30vh - 20px);
+    justify-content: space-between;
+    
+}
+.contener .left {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+section #make .left {
     width: 40%;
     height: 100%;
     display: flex;
@@ -298,7 +424,7 @@ header {
     
 }    
 #make .right h1 span{
-    color: #17c047;
+    color: #ffd700;
 }
 
 #make .left h2 {
@@ -306,6 +432,8 @@ header {
 }  
 
 .dishes {
+    margin-left: 10%;
+    margin-right: 10%;
     display: flex;
     flex-wrap: wrap;
     width: 80%;
@@ -336,6 +464,11 @@ header {
     font-size: 18px;
 
 }
+.dishes .dish h3 {
+    text-align: center;
+    font-size: 15px;
+
+}
 
 .dishes .dish a {
     margin-top: 10px;
@@ -349,7 +482,7 @@ header {
 
 .dish1 {
     padding-top: 25px;
-    background-color: blue;
+    background-color: #007bff;
     margin-top: 100px;
     align-items: center;
    
@@ -364,16 +497,17 @@ header {
     margin-top: 20px;
     font-size: 20px;
      /* margin-bottom: 5%; */
-    color: white;
+    color: #f8fafc;
 }
 .dish1 h1 span {
+    
     justify-content: space-between;
     text-align: center;
     text-decoration: 0;
     margin-top: 10px;
-    font-size: 30px;
+    font-size: 35px;
      margin-bottom: 5%;
-    color: white;
+    color: #f8fafc;
 }
 
 .dish1 p {
@@ -413,6 +547,15 @@ header {
     justify-content: space-between;
     
 }
+.contener::before {
+    position: absolute;
+    left: 370px;
+    content: "";
+    width: 1000px;
+    height: 1px;
+    background-color: #04140b;
+    margin-bottom: -60px;
+}
 .container .left {
     width: 40%;
     height: 100%;
@@ -426,7 +569,7 @@ header {
     
 }    
 .container .left h1 span{
-    color: #17c047;
+    color: #ffd700;
 }
 
 .container .right h3 {
@@ -444,6 +587,10 @@ header {
     height: 1px;
     background-color: #04140b;
     margin-bottom: -60px;
+}
+
+.right h1 {
+    margin-left: 50px;
 }
 
 .history {
@@ -526,7 +673,7 @@ header {
 }
 
 .names {
-    /* background-color: red; */
+   
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -545,18 +692,19 @@ header {
     flex-direction: column;
     border-radius: 6px;
     margin-bottom: 35px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+   
 
 }
 .names .doctors-name  img {
-    width: 200px;
-    height: 190px;
-    margin-bottom: 35px;
+    width: 170px;
+    height: 160px;
+    margin-bottom: 0px;
 }
 .names .doctors-name h1 {
    
     text-align: center;
-    font-size: 13px;
+    font-size: 18px;
+    margin-top: 10px;
 
 }
 
@@ -581,6 +729,10 @@ header {
     color: #777777;
 }
 
+.doctors-name p {
+    font-size: 10px;
+}
+
 .doctors-name button {
     justify-content: space-between;
     text-align: center;
@@ -594,6 +746,371 @@ header {
     
     width: 150%;
     height: 45px;
-    margin-top: 40px;
+    margin-top: 20px;
 
+}
+
+/* about us CSS */
+
+.about-us {
+    background-color: #007bff;
+    display: flex;
+    margin-bottom: -80px;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 400px;
+    justify-content: space-around;
+    align-items: center;
+    /* margin-left: 10%;
+    margin-right: 10%; */ 
+}
+
+section .Samantha {
+    background-color: #f8fafc;
+}
+.Samantha {
+    text-align: center;
+}
+
+.about-us h3 {
+    justify-content: space-between;
+
+    text-decoration: 0;
+    margin-top: 20px;
+    font-size: 25px;
+     margin-bottom: 5%;
+    color: #f8fafc;
+}
+.about-us p {
+    justify-content: space-between;
+    text-decoration: 0;
+    margin-top: 20px;
+    font-size: 20px;
+     margin-bottom: 5%;
+    color: #f8fafc;
+}
+
+/* who we are CSS */
+
+.consult {
+    margin-top: 0%;
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: calc(30vh - 20px);
+    justify-content: space-between;
+    
+}
+.consult .left {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.consult .left h1  {
+    font-size: 30px;
+    
+}    
+.consult .left h1 span{
+    color: #007bff;
+}
+
+.consult .right h3 {
+    font-size: 30px;
+}  
+.consult .right h1 {
+    font-size: 40px;
+
+}  
+.consult::after {
+    position: absolute;
+    left: 20;
+    content: "";
+    width: 900px;
+    height: 1px;
+    background-color: #04140b;
+    margin-bottom: -60px;
+}
+
+
+#reservation {
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+#reservation .image {
+    display: flex;
+    margin-top: 0;
+    height: 600px;
+}
+
+#reservation form {
+    display: flex;
+    background-color: rgba(0,0,0,0.05);
+    padding: 25px;
+    border-radius: 6px;
+    flex-direction: column;
+    width: 350px;
+}
+#reservation form .phone {
+    display: flex;
+    background-color: rgba(0,0,0,0.05);
+    padding: 25px;
+    border-radius: 6px;
+    flex-direction: column;
+    width: 350px;
+}
+#reservation form  label {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+#reservation form input {
+    margin-bottom: 10px;
+   padding: 12px;
+   border: 1px solid transparent;
+   box-shadow: 0 0 10px rgba(0,0,0,0.05);
+   outline: 0;
+}
+#reservation .phone {
+    display: flex;
+    background-color: rgba(0,0,0,0.05);
+    padding: 25px;
+    border-radius: 6px;
+    flex-direction: column;
+    width: 350px;
+}
+#reservation .phone  label {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+#reservation .phone input {
+    margin-bottom: 10px;
+   padding: 12px;
+   border: 1px solid transparent;
+   box-shadow: 0 0 10px rgba(0,0,0,0.05);
+   outline: 0;
+}
+#reservation .message {
+    
+   
+    padding: 15px;
+    border-radius: 6px;
+    flex-direction: column;
+    width: 350px;
+}
+#reservation .message  label {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+#reservation .message input {
+    margin-bottom: 20px;
+   padding: 60px;
+   border: 1px solid transparent;
+   box-shadow: 0 0 10px rgba(0,0,0,0.05);
+   outline: 0;
+   width: 10000px;
+   
+}
+#reservation form input:focus {
+    outline: 1px solid #27ae60;
+}
+#reservation form input[type="submit"]{
+    padding: 15px;
+    width: 600px;
+
+    margin-top: 75px;
+    color: #fff;
+    background-color: #007bff;
+    border: 1px solid #27ae60;
+    margin: 80px;
+}
+
+
+/* Souscribe to our newsletter CSS */
+
+#souscribe {
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    background-color: #0056b3;
+    height: 260px;
+    width: 80%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top:300px;
+    border-radius: 12px;
+    
+}
+
+#souscribe .put1 {
+    background-color: #bcbcbc9e;
+    color: #f8fafc;
+    height: 50px;
+   
+}
+
+
+
+#souscribe .input {
+    justify-content: space-between;
+    text-align: center;
+   
+    
+    color: #f8fafc;
+    
+   
+     
+ 
+   
+   
+    width: 1000px;
+    height: 60px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+   
+}
+#souscribe button {
+    justify-content: space-between;
+    text-align: center;
+    text-decoration: 0;
+    font-size: 17px;
+    background-color: #f8fafc;
+    color: #000;
+    width: 20%;
+    height: 50px;
+    border-radius: 10px;
+
+}
+
+#souscribe input {
+    justify-content: space-between;
+    text-align: center;
+    width: 20%;
+    height: 60px;
+    background-color: #0056b3;
+   color: #f8fafc;
+   margin-top: 20px;
+}
+
+#souscribe h1{
+    text-align: center;
+    color: #f8fafc;
+    font-size: 40px;
+
+}
+
+/* footer CSS */
+
+footer {
+    margin-top: 220px;
+    display: flex;
+    align-items: center;
+    display: flex;
+    background-color: #007bff;
+    color: #f8fafc;
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 450px;
+    padding: 0 10%;
+  
+}
+
+footer .logo img {
+    margin-bottom: 40px;
+    filter:brightness(0) invert(1);
+}
+
+footer .partie1 p {
+    font-size: 15px;
+    line-height: 2;
+    
+    margin-bottom: 20px; 
+   
+}
+footer .partie2 h4 {
+    font-size: 15px;
+}
+footer .partie2 p {
+    font-size: 30px;
+    margin-top: 10px;
+}
+footer .partie2 p span{
+    font-size: 35px;
+   
+}
+footer .partie2 h3{
+    font-size: 12px;
+    margin-top: 50px;
+    line-height: 2;
+   
+}
+
+
+footer .partie3 h6 {
+    font-size: 13px;
+    
+    margin-bottom: 25px; 
+}
+footer .partie3 h3 {
+    font-size: 15px;
+    line-height: 2;
+    
+    margin-bottom: 30px; 
+}
+footer .partie4 p {
+    font-size: 15px;
+    line-height: 2;
+    
+    margin-bottom: 30px;
+}
+footer .partie5 h6 {
+    font-size: 12px;
+   
+    margin-bottom: 20px; /* Espacement entre les parties */
+}
+footer .partie5 h4 {
+    font-size: 15px;
+   
+    margin-bottom: 20px; /* Espacement entre les parties */
+}
+footer .partie5 p {
+    font-size: 12px;
+   
+    margin-bottom: 20px; /* Espacement entre les parties */
+}
+footer .partie5 h3 {
+    font-size: 15px;
+   
+    margin-bottom: 20px; /* Espacement entre les parties */
+}
+
+.terminal {
+    background-color: #777777;
+    height: 80px;
+    align-content: center;
+    text-align: center;
+
+}
+.terminal h2 {
+    font-size: 16px;
+    text-align: center;
+    
+    color: #f8fafc;
+    
+    
 }

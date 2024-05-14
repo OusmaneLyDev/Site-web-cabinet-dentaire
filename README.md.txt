@@ -11,13 +11,7 @@ Objectifs du Projet
     Présenter le personnel médical, y compris les dentistes, les hygiénistes dentaires et le personnel administratif.
     Fournir des informations sur les horaires d'ouverture et les moyens de contacter le cabinet, y compris le numéro de téléphone et l'adresse e-mail.
 
-Technologies Utilisées
 
-    HTML5 et CSS3 pour la structure et le style du site.
-    JavaScript pour les fonctionnalités interactives telles que les formulaires de contact et les effets visuels.
-    Framework Bootstrap pour le développement frontend, assurant la réactivité et la compatibilité multi-appareils.
-    PHP pour la gestion des formulaires de contact et l'envoi de courriels.
-    MySQL pour la gestion des données des patients et le stockage des formulaires de contact.
 
 Structure des Fichiers
 

@@ -23,10 +23,7 @@ section {
 body {
     position: relative;
 }
-html {
-    scroll-behavior: smooth;
-    font-size: 62.5%;
-}
+
 
 header {
     display: flex;
@@ -43,6 +40,7 @@ header {
     z-index: 10;
 }
 header button {
+    cursor: pointer;
     justify-content: space-between;
     text-align: center;
     text-decoration: 0;
@@ -55,6 +53,7 @@ header button {
    
 }
 .section button {
+   
     display: flex;
     background-color: white;
     
@@ -158,6 +157,7 @@ header button {
   }
   
   .button1 {
+    cursor: pointer;
     background-color: #007bff;
     color: white;
     border-radius: 8px;
@@ -167,6 +167,7 @@ header button {
   }
   
   .button2 {
+    cursor: pointer;
     background-color: transparent; 
     color: rgb(33, 7, 7);
     border-radius: 8px;
@@ -236,7 +237,7 @@ header button {
     align-items: center;
     /* margin-left: 10%;
     margin-right: 10%; */
-    height: calc(30vh - 20px);
+    height: calc(45vh - 20px);
     justify-content: space-between;
 }
 .services_list {
@@ -250,6 +251,7 @@ header button {
   
     margin-left: 0%;
     margin-right: 5%;
+    font-size: 10px;
    
  
 }
@@ -298,9 +300,10 @@ header button {
     border-radius: 12px;
 
 }
-.service  p {
+/* .service  h2 {
+    
     color: #333;
-}
+} */
 #bas .left {
     margin-left: 10%;
     width: 40%;
@@ -315,7 +318,7 @@ header button {
     color: #f8fafc;
 }
 #bas .left h2 {
-    font-size: 40px;
+    font-size: 38px;
     color: #f8fafc;
 
 }
@@ -347,23 +350,39 @@ header button {
     justify-content: center;
     
 }
-.right .right-bottom{
-    display: flex;
-}
-.shield-top {
-    display: flex;
-}
-/* #provide .right h2 {
-    font-size: 20px;
-    color: #27ae60;
+
+.right .right-bottom  {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+
+
 }
 
-#provide .right p {
-    font-size: 17px;
-    color: #250707;
-    margin-left: 25px;
-    margin-bottom: ;
-} */
+.right .right-bottom .shield-top div {
+    display: flex;
+    padding: 10px;
+    height: 28%;
+}
+.right .right-bottom .shield-top p {
+    font-size: 20px;
+    margin-left: 15px;
+}
+.right .right-bottom .sheld-right div {
+    display: flex;
+    padding: 10px;
+    height: 28%;
+}
+.right .right-bottom .sheld-right p {
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.right h2 {
+    font-size: 22px;
+    text-align: center;
+    margin-right: 70px;
+    margin-bottom: 40px;
+}
 
 
 
@@ -495,9 +514,10 @@ section #make .left {
     text-align: center;
     text-decoration: 0;
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 32px;
      /* margin-bottom: 5%; */
     color: #f8fafc;
+    margin-top: 5px;
 }
 .dish1 h1 span {
     
@@ -505,7 +525,7 @@ section #make .left {
     text-align: center;
     text-decoration: 0;
     margin-top: 10px;
-    font-size: 35px;
+    font-size: 40px;
      margin-bottom: 5%;
     color: #f8fafc;
 }
@@ -514,17 +534,21 @@ section #make .left {
     justify-content: space-between;
     text-align: center;
     text-decoration: 0;
-    margin-top: 10px;
-    font-size: 15px;
+    margin-top: 20px;
+    font-size: 18px;
      margin-bottom: 5%;
-    color: white;
+    color: #e4e3da;
+    line-height: 1.5;
+
 }
 .dish1 button {
+    cursor: pointer;
     justify-content: space-between;
     text-align: center;
     text-decoration: 0;
     font-size: 17px;
     color: white;
+
    
      
     background-color:transparent;
@@ -573,10 +597,10 @@ section #make .left {
 }
 
 .container .right h3 {
-    font-size: 30px;
+    font-size: 35px;
 }  
 .container .right h1 {
-    font-size: 40px;
+    font-size: 45px;
 
 }  
 .container::after {
@@ -608,7 +632,7 @@ section #make .left {
 
     text-decoration: 0;
     margin-top: 20px;
-    font-size: 25px;
+    font-size: 20px;
      margin-bottom: 5%;
     color: rgb(20, 1, 1);
 }
@@ -616,9 +640,9 @@ section #make .left {
     justify-content: space-between;
     text-decoration: 0;
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 15px;
      margin-bottom: 5%;
-    color: rgb(20, 1, 1);
+    color:#0056b3;
 }
 
 
@@ -630,7 +654,7 @@ section #make .left {
     align-items: center;
     margin-left: 10%;
     margin-right: 10%;
-    height: calc(30vh - 20px);
+    height: calc(10vh - 20px);
     justify-content: space-between;
     
 }
@@ -673,32 +697,35 @@ section #make .left {
 }
 
 .names {
-   
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    width: 80%;
     justify-content: space-around;
     
 }
 
 .names .doctors-name {
     height: 300px;
-    width: 10%;
+    /* width: 10%; */
    
     padding: 20px;
     display: flex;
     align-items: center;
     /* justify-content: center; */
     flex-direction: column;
-    border-radius: 6px;
-    margin-bottom: 35px;
+    /* border-radius: 6px; */
+    margin-bottom: 55px;
    
 
 }
 .names .doctors-name  img {
-    width: 170px;
-    height: 160px;
-    margin-bottom: 0px;
+    width: 190px;
+    height: 180px;
+    /* margin-bottom: 0px; */
 }
 .names .doctors-name h1 {
    
@@ -734,6 +761,7 @@ section #make .left {
 }
 
 .doctors-name button {
+    cursor: pointer;
     justify-content: space-between;
     text-align: center;
     text-decoration: 0;
@@ -767,9 +795,21 @@ section #make .left {
 
 section .Samantha {
     background-color: #f8fafc;
+    height: 250px;
+    width: 230px;
+    
 }
 .Samantha {
     text-align: center;
+}
+.Samantha img {
+    height: 200px;
+    width: 200px;
+}
+
+.Samantha h2 {
+    font-size: 15px;
+    margin-top: 10px;
 }
 
 .about-us h3 {
@@ -815,7 +855,7 @@ section .Samantha {
     
 }    
 .consult .left h1 span{
-    color: #007bff;
+    color: #ffd700;
 }
 
 .consult .right h3 {
@@ -823,6 +863,7 @@ section .Samantha {
 }  
 .consult .right h1 {
     font-size: 40px;
+    margin-left: 100px;
 
 }  
 .consult::after {
@@ -855,7 +896,8 @@ section .Samantha {
 
 #reservation form {
     display: flex;
-    background-color: rgba(0,0,0,0.05);
+    background-color: white;
+    /* background-color: rgba(0,0,0,0.05); */
     padding: 25px;
     border-radius: 6px;
     flex-direction: column;
@@ -863,7 +905,7 @@ section .Samantha {
 }
 #reservation form .phone {
     display: flex;
-    background-color: rgba(0,0,0,0.05);
+    /* background-color: rgba(0,0,0,0.05); */
     padding: 25px;
     border-radius: 6px;
     flex-direction: column;
@@ -872,8 +914,10 @@ section .Samantha {
 #reservation form  label {
     margin-bottom: 8px;
     font-size: 14px;
+    border-color: #000;
 }
-#reservation form input {
+    #reservation form input {
+border-color: #000;
     margin-bottom: 10px;
    padding: 12px;
    border: 1px solid transparent;
@@ -896,7 +940,7 @@ section .Samantha {
     margin-bottom: 10px;
    padding: 12px;
    border: 1px solid transparent;
-   box-shadow: 0 0 10px rgba(0,0,0,0.05);
+   /* box-shadow: 0 0 10px rgba(0,0,0,0.05); */
    outline: 0;
 }
 #reservation .message {
@@ -915,9 +959,9 @@ section .Samantha {
     margin-bottom: 20px;
    padding: 60px;
    border: 1px solid transparent;
-   box-shadow: 0 0 10px rgba(0,0,0,0.05);
+   /* box-shadow: 0 0 10px rgba(0,0,0,0.05); */
    outline: 0;
-   width: 10000px;
+   width: 500px;
    
 }
 #reservation form input:focus {
@@ -925,7 +969,8 @@ section .Samantha {
 }
 #reservation form input[type="submit"]{
     padding: 15px;
-    width: 600px;
+    width: 500px;
+    border-radius: 10px;
 
     margin-top: 75px;
     color: #fff;
@@ -1042,8 +1087,19 @@ footer .partie1 p {
     margin-bottom: 20px; 
    
 }
+.partie1 {
+    border-right: 2px solid;
+    width: 250px;
+    margin-left: 50px;
+}
+
 footer .partie2 h4 {
     font-size: 15px;
+}
+.partie2 {
+    border-right: 2px solid;
+    width: 250px;
+    margin-left: 50px;
 }
 footer .partie2 p {
     font-size: 30px;
@@ -1062,21 +1118,35 @@ footer .partie2 h3{
 
 
 footer .partie3 h6 {
-    font-size: 13px;
+    font-size: 14px;
     
     margin-bottom: 25px; 
 }
-footer .partie3 h3 {
+.partie3 {
+    border-right: 2px solid;
+    width: 250px;
+    margin-left: 50px;
+    
+}
+footer .partie3 a {
     font-size: 15px;
     line-height: 2;
+    color: #e4e3da;
     
     margin-bottom: 30px; 
 }
-footer .partie4 p {
+footer .partie4 a  {
     font-size: 15px;
     line-height: 2;
+    color: #f8fafc;
     
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
+}
+.partie4 {
+    border-right: 2px solid;
+    width: 250px;
+    margin-left: 50px;
+    
 }
 footer .partie5 h6 {
     font-size: 12px;

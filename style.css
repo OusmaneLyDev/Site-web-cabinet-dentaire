@@ -64,7 +64,7 @@ header button {
     display: flex;
     
 }
-.logo {
+0.logo {
     color: #27ae60;
     font-weight: 700;
     font-size: 25px;
@@ -775,7 +775,7 @@ section #make .left {
     border-radius: 10px;
     
     width: 80%;
-    height: 150px;
+    height: 100%;
     margin-top: 20px;
 
 }

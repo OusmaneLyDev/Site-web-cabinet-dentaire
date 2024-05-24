@@ -850,6 +850,7 @@ section .Samantha {
     margin-top: 300px;
     margin-left: 10%;
     margin-right: 10%;
+    /* margin-bottom: 300px; */
     
 }
 .consult .left {
@@ -1007,7 +1008,7 @@ border-color: #000;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top:300px;
+    margin-top: 30px;
     border-radius: 12px;
     
 }
@@ -1077,7 +1078,7 @@ border-color: #000;
 /* footer CSS */
 
 footer {
-    margin-top: 220px;
+    margin-top: 60px;
     display: flex;
     align-items: center;
     display: flex;

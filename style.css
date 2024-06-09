@@ -47,27 +47,20 @@ header button {
     font-size: 17px;
     background-color: #007bff;
     color: #f8fafc;
-    width: 150%;
-    height: 60px;
-    border-radius: 12px;
+    width: 80px;
+    height: 32px;
+    border-radius: 4px;
    
 }
-.section button {
-   
-    display: flex;
-    background-color: white;
-    
 
-    
-}
 .menu {
     display: flex;
     
 }
-0.logo {
+header.logo img {
     color: #27ae60;
-    font-weight: 700;
-    font-size: 25px;
+    width: 100%;
+    
 }
 
 .menu li {
@@ -166,15 +159,7 @@ header button {
     font-size: 16px;
   }
   
-  .button2 {
-    cursor: pointer;
-    background-color: transparent; 
-    color: rgb(33, 7, 7);
-    border-radius: 8px;
-    width: 180px;
-    height: 50px;
-    font-size: 16px;
-  }
+ 
 
 
 /* #home .left button {
@@ -225,7 +210,7 @@ header button {
 #home .right img {
     width: 100%;
     animation: animate 2s linear;
-    transition: 0.5s;
+    border-radius: 20px;
 }
 
 
@@ -422,24 +407,12 @@ section #make {
     justify-content: space-between;
     
 }
-.contener .left {
-    width: 40%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-}
-section #make .left {
-    width: 40%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-}
+
 #make .right h1  {
     font-size: 50px;
+    text-align: center;
+    width: 100%;
+    border-bottom: 2px solid silver;
     
 }    
 #make .right h1 span{
@@ -543,77 +516,31 @@ section #make .left {
     line-height: 1.5;
 
 }
-.dish1 button {
-    cursor: pointer;
-    justify-content: space-between;
-    text-align: center;
-    text-decoration: 0;
-    font-size: 17px;
-    color: white;
 
-   
-     
-    background-color:transparent;
-    border-radius: 10px;
-    margin-left: 580px;
-    width: 20%;
-    height: 60px;
-
-}
 
 /* our History CSS */
 
 .container {
     margin-top: 0%;
-    display: flex;
+    /* display: flex; */
     align-items: center;
-    margin-left: 10%;
-    margin-right: 10%;
+   
     height: calc(30vh - 20px);
     justify-content: space-between;
     
 }
-.contener::before {
-    position: absolute;
-    left: 370px;
-    content: "";
-    width: 1000px;
-    height: 1px;
-    background-color: #04140b;
-    margin-bottom: -60px;
-}
-.container .left {
-    width: 40%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-}
+
+
 .container .left h1  {
     font-size: 50px;
+    text-align: center;
+    border-bottom: 2px solid silver;
     
 }    
 .container .left h1 span{
     color: yellow;
 }
 
-.container .right h3 {
-    font-size: 35px;
-}  
-.container .right h1 {
-    font-size: 45px;
-
-}  
-.container::after {
-    position: absolute;
-    left: 20;
-    content: "";
-    width: 900px;
-    height: 1px;
-    background-color: #04140b;
-    margin-bottom: -60px;
-}
 
 .right h1 {
     margin-left: 50px;
@@ -622,11 +549,17 @@ section #make .left {
 .history {
     display: flex;
     flex-wrap: wrap;
-    width: 80%;
+    /* width: 80%; */
     justify-content: space-around;
     align-items: center;
     margin-left: 10%;
     margin-right: 10%;
+}
+
+.history img {
+    width: 30%;
+    margin-bottom: 40px;
+    border-radius: 20px;
 }
 
 .history h3 {
@@ -650,53 +583,23 @@ section #make .left {
 
 /* meet our CSS */
 
-.doctors {
-    margin-top: 0%;
-    display: flex;
-    align-items: center;
-    margin-left: 10%;
-    margin-right: 10%;
-    height: calc(10vh - 20px);
-    justify-content: space-between;
-    
-}
-.doctors .left {
-    width: 40%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-}
-.doctors .left h2  {
-    font-size: 35px;
-    
-}    
-.doctors .left h1  {
 
-    font-size: 50px;
-    
-}    
+ 
 
 
 
 
 .doctors .right h1 {
     font-size: 40px;
+    text-align: center;
+    border-bottom: 2px solid silver;
+
 }  
 .doctors .right h1 span{
     color: #17c047;
 
 }  
-.doctors::before {
-    position: absolute;
-    left: 370px;
-    content: "";
-    width: 1000px;
-    height: 1px;
-    background-color: #04140b;
-    margin-bottom: -60px;
-}
+
 
 .names {
     margin-left: 10%;
@@ -780,111 +683,25 @@ section #make .left {
 
 }
 
-/* about us CSS */
 
-.about-us {
-    background-color: #007bff;
-    display: flex;
-    margin-bottom: -80px;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 400px;
-    justify-content: space-around;
-    align-items: center;
-    /* margin-left: 10%;
-    margin-right: 10%; */ 
-}
-
-section .Samantha {
-    background-color: #f8fafc;
-    height: 250px;
-    width: 230px;
-    
-}
-.Samantha {
-    text-align: center;
-}
-.Samantha img {
-    height: 200px;
-    width: 200px;
-}
-
-.Samantha h2 {
-    font-size: 15px;
-    margin-top: 10px;
-}
-
-.about-us h3 {
-    justify-content: space-between;
-
-    text-decoration: 0;
-    margin-top: 20px;
-    font-size: 25px;
-     margin-bottom: 5%;
-    color: #f8fafc;
-}
-.about-us p {
-    justify-content: space-between;
-    text-decoration: 0;
-    margin-top: 20px;
-    font-size: 20px;
-     margin-bottom: 5%;
-    color: #f8fafc;
-}
 
 /* who we are CSS */
 
-.consult {
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
-    /* margin-left: 10%;
-    margin-right: 10%; */
-    height: calc(30vh - 20px);
-    justify-content: space-between;
-    
-}
+/*  */
 
 
-#consult{
-    margin-top: 300px;
-    margin-left: 10%;
-    margin-right: 10%;
-    /* margin-bottom: 300px; */
-    
+#consult {
+  
 }
-.consult .left {
-    width: 40%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-}
-.consult .left h1  {
+
+#consult .left h1  {
     font-size: 30px;
+    text-align: center;
+    border-bottom: 2px solid silver;
     
 }    
 .consult .left h1 span{
     color: #ffd700;
-}
-
-.consult .right h3 {
-    font-size: 30px;
-}  
-.consult .right h1 {
-    font-size: 40px;
-    margin-left: 100px;
-
-}  
-.consult::after {
-    position: absolute;
-    left: 20;
-    content: "";
-    width: 900px;
-    height: 1px;
-    background-color: #04140b;
-    margin-bottom: -60px;
 }
 
 
@@ -892,17 +709,18 @@ section .Samantha {
     margin-left: 10%;
     margin-right: 10%;
     display: flex;
-    margin-top: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: 100vh;
     flex-direction: column;
+   
 }
 #reservation .image {
     display: flex;
-    margin-top: 0;
-    height: 600px;
+    height: 500px;
+    border-radius: 20px;
+}
+
+#reservation img {
+   border-radius: 20px;
 }
 
 #reservation form {
@@ -913,7 +731,56 @@ section .Samantha {
     border-radius: 6px;
     flex-direction: column;
     width: 350px;
+    margin-left: 100px;
 }
+
+input[type="checkbox"] {
+    display: none;
+}
+
+/* Create a custom checkbox */
+input[type="checkbox"] + label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #555; /* Adjust text color to match your design */
+}
+
+/* Create the box for the custom checkbox */
+input[type="checkbox"] + label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc; /* Adjust border color to match your design */
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+input[type="checkbox"]:checked + label::after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid #007BFF; /* Adjust checkmark color to match your design */
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    font-family: Arial, sans-serif; /* Adjust font to match your design */
+    margin: 20px; /* Adjust margin to your needs */
+}
+
 #reservation form .phone {
     display: flex;
     /* background-color: rgba(0,0,0,0.05); */
@@ -985,13 +852,14 @@ border-color: #000;
 #reservation form input[type="submit"]{
     padding: 15px;
     width: 500px;
-    border-radius: 10px;
 
-    margin-top: 75px;
+    cursor: pointer;
+
+   
     color: #fff;
     background-color: #007bff;
     border: 1px solid #27ae60;
-    margin: 80px;
+
 }
 
 
@@ -1022,26 +890,7 @@ border-color: #000;
 
 
 
-/* #souscribe .input {
-    justify-content: space-between;
-    text-align: center;
-   
-    
-    color: #f8fafc;
-    
-   
-     
- 
-   
-   flex-direction: column;
-    width: 100px;
-    height: 60px;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    margin-top: 40px;
-   
-} */
+
 #souscribe button {
     justify-content: space-between;
     text-align: center;
@@ -1201,4 +1050,905 @@ footer .partie5 h3 {
     color: #f8fafc;
     
     
+}
+
+
+
+
+
+
+/* Responsive */
+@media (max-width:964px) {
+    header .menu {
+        display: none;
+    }
+    header {
+        padding: 0 20px;
+    }
+    #home {
+        flex-direction: column;
+        padding: 12px;
+        height: fit-content;
+
+    }
+    #home .left , #home .right  {
+        width: 100%;
+        padding: 0;
+    }
+    #home .left {
+        margin: 100px 0;
+    }
+    #home .left h1 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    #home .left h4 {
+        font-size: 15px;
+    }
+    #home .left p {
+        font-size: 15px;
+    }
+    #menu .dishes .dish {
+        width: 100%;
+        max-width: 260px;
+    }
+
+    .toggle_menu {
+        display: flex;
+        height: 40px;
+        width: 40px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         position: relative;
+         cursor: pointer;
+
+    }
+    .toggle_menu::before {
+        position: absolute;
+        content: "";
+        height: 3px;
+        width: 28px;
+        background-color: #27ae60;
+        border-radius: 6px;
+        box-shadow: 0 10px 0 #27ae60;
+        transform: translateY(-10px);
+        transition: 0.5s;
+    }
+    .toggle_menu.active::before {
+        transform: translateY(0) rotate(135deg);
+        box-shadow: 0 0 0 #27ae60
+    }
+    .toggle_menu::after {
+        position: absolute;
+        content: "";
+        height: 3px;
+        width: 28px;
+        background-color: #27ae60;
+        border-radius: 6px;
+        transform: translateY(10px);
+        transition: 0.5s;
+    }
+    .toggle_menu.active::after {
+        transform: translateY(0) rotate(-135deg);
+      
+    }
+    header .menu.responsive {
+        display: flex;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        flex-direction: column;
+       
+    }
+    header .menu.responsive li {
+        margin: 15px 0;
+    }
+
+    .toggle_menu .btn-login {
+        display: none;
+    }
+    #bas .left {
+        width: 20%;
+        
+    }
+    .service, .service1, .service2 {
+        flex: 1 1 30%;
+    }
+
+
+
+}
+
+@media (max-width: 1200px) {
+   
+
+    
+}
+
+
+@media (max-width: 768px) {
+    .services_list {
+        padding: 10px 2%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .service, .service1, .service2 {
+        flex: 1 1 100%;
+        margin: 10px 0;
+    }
+
+    #bas .left {
+        margin-left: 5%;
+        width: 50%;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 576px) {
+    #bas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #bas .left {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 1200px) {
+    #provide {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #provide .right {
+        width: 45%;
+    }
+
+    .right .right-bottom {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 992px) {
+    #provide {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #provide .right {
+        width: 50%;
+    }
+
+    .right .right-bottom {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    #provide {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #provide .right, #provide .left {
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+    }
+
+    .right .right-bottom {
+        width: 100%;
+        
+    }
+}
+
+@media (max-width: 576px) {
+    #provide {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .right h2 {
+        margin-right: 0;
+        font-size: 18px;
+    }
+
+    .right .right-bottom .shield-top p, 
+    .right .right-bottom .sheld-right p {
+        font-size: 16px;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 1200px) {
+    #make, .contener {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .dishes .dish {
+        width: 45%;
+    }
+}
+
+@media (max-width: 992px) {
+    #make, .contener {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #make .right h1 {
+        font-size: 40px;
+    }
+
+    #make .left h2 {
+        font-size: 35px;
+    }
+
+    .dishes .dish {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    #make {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .contener {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    #make .right, #make .left, .contener {
+        width: 100%;
+    }
+
+    .dishes {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .dishes .dish {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    #make, .contener {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    #make .right h1 {
+        font-size: 30px;
+    }
+
+    #make .left h2 {
+        font-size: 25px;
+    }
+
+    .dishes .dish p, .dishes .dish h3 {
+        font-size: 14px;
+    }
+
+    .dishes .dish a {
+        font-size: 12px;
+        padding: 5px 40px;
+    }
+
+    .dish1 {
+        margin-top: 50px;
+        height: auto;
+        padding: 20px;
+    }
+
+    .dish1 h1 {
+        font-size: 24px;
+    }
+
+    .dish1 h1 span {
+        font-size: 28px;
+    }
+
+    .dish1 p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container .left h1 {
+        font-size: 40px;
+    }
+
+    .right h1 {
+        margin-left: 30px;
+    }
+
+    .history img {
+        width: 45%;
+    }
+
+    .history h3, .history p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container .left h1 {
+        font-size: 35px;
+    }
+
+    .right h1 {
+        margin-left: 20px;
+    }
+
+    .history img {
+        width: 60%;
+    }
+
+    .history h3, .history p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 0 5%;
+    }
+
+    .container .left h1 {
+        font-size: 30px;
+    }
+
+    .history {
+        flex-direction: column;
+        margin: 0 5%;
+    }
+
+    .history img {
+        width: 80%;
+    }
+
+    .history h3, .history p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        margin-top: 20px;
+        padding: 0 2%;
+    }
+
+    .container .left h1 {
+        font-size: 30px;
+    }
+
+    .right h1 {
+        margin-left: 10px;
+        font-size: 20px;
+    }
+
+    .history img {
+        width: 100%;
+    }
+
+    .history h3, .history p {
+        font-size: 13px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 1200px) {
+    #consult .left h1 {
+        font-size: 28px;
+    }
+
+    #reservation {
+        height: auto;
+    }
+
+    #reservation .image {
+        height: auto;
+    }
+
+    #reservation form,
+    #reservation .phone,
+    #reservation .message {
+        max-width: 100%;
+        margin: 10px;
+    }
+
+    #reservation .message input {
+        padding: 40px;
+    }
+
+    #reservation form input[type="submit"] {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    #consult .left h1 {
+        font-size: 25px;
+    }
+
+    #reservation .image {
+        flex-direction: column;
+    }
+
+    #reservation form,
+    #reservation .phone,
+    #reservation .message {
+        margin: 10px auto;
+    }
+
+    #reservation .message input {
+        padding: 30px;
+    }
+
+    #reservation form input[type="submit"] {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    #consult .left h1 {
+        font-size: 22px;
+    }
+
+    #reservation {
+        margin: 0 5%;
+    }
+
+    #reservation form,
+    #reservation .phone,
+    #reservation .message {
+        padding: 20px;
+    }
+
+    #reservation .message input {
+        padding: 20px;
+    }
+
+    #reservation form input[type="submit"] {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    #consult .left h1 {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    #reservation {
+        margin: 0 2%;
+    }
+
+    #reservation form,
+    #reservation .phone,
+    #reservation .message {
+        padding: 15px;
+    }
+
+    #reservation .message input {
+        padding: 15px;
+    }
+
+    #reservation form input[type="submit"] {
+        width: 100%;
+    }
+    
+}
+
+@media (max-width: 1200px) {
+    #souscribe {
+        width: 90%;
+    }
+
+    #souscribe button, #souscribe input {
+        width: 40%;
+        height: 50px;
+        margin: 10px 0;
+    }
+
+    #souscribe h1 {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 992px) {
+    #souscribe {
+        width: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #souscribe button, #souscribe input {
+        width: 45%;
+        height: 50px;
+        margin: 10px 0;
+    }
+
+    #souscribe h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    #souscribe {
+        margin-left: 5%;
+        margin-right: 5%;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    #souscribe button, #souscribe input {
+        width: 100%;
+        height: 50px;
+        margin: 10px 0;
+    }
+
+    #souscribe h1 {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 576px) {
+    #souscribe {
+        margin-left: 2%;
+        margin-right: 2%;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    #souscribe button, #souscribe input {
+        width: 50%;
+        height: 50px;
+        margin: 10px 0;
+    }
+
+    #souscribe h1 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1200px) {
+    footer {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 20px 5%;
+    }
+
+    footer .partie1, footer .partie2, footer .partie4, footer .partie5 {
+        border-right: none;
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    footer .partie1 p, footer .partie2 p, footer .partie2 h3, footer .partie3 h6, footer .partie3 a, footer .partie4 a, footer .partie5 h6, footer .partie5 h4, footer .partie5 p, footer .partie5 h3 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 992px) {
+    footer {
+        padding: 20px 2%;
+    }
+
+    footer .logo img {
+        margin: 0 auto 20px;
+    }
+
+    footer .partie1, footer .partie2, footer .partie4, footer .partie5 {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    footer .partie1 p, footer .partie2 p, footer .partie2 h3, footer .partie3 h6, footer .partie3 a, footer .partie4 a, footer .partie5 h6, footer .partie5 h4, footer .partie5 p, footer .partie5 h3 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding: 20px 1%;
+    }
+
+    footer .partie1, footer .partie2, footer .partie4, footer .partie5 {
+        margin-left: 0;
+    }
+
+    footer .partie1 p, footer .partie2 p, footer .partie2 h3, footer .partie3 h6, footer .partie3 a, footer .partie4 a, footer .partie5 h6, footer .partie5 h4, footer .partie5 p, footer .partie5 h3 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    footer {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 1%;
+    }
+
+    footer .partie1, footer .partie2, footer .partie4, footer .partie5 {
+        width: 100%;
+        margin: 0 0 20px;
+        border-right: none;
+    }
+
+    footer .partie1 p, footer .partie2 p, footer .partie2 h3, footer .partie3 h6, footer .partie3 a, footer .partie4 a, footer .partie5 h6, footer .partie5 h4, footer .partie5 p, footer .partie5 h3 {
+        text-align: center;
+    }
+}
+
+/* Sing Up CSS */
+.containe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.logo1 img {
+    
+    width: 10%;
+ 
+}
+
+.form-containe {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border: 1px solid #ccc;
+    width: 400px;
+}
+
+.sign-up-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.sign-up-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.sign-up-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.checkbox-containe {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.checkbox-containe input {
+    margin-right: 10px;
+}
+
+.checkbox-containe label {
+    font-size: 14px;
+}
+
+.checkbox-containe a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+.checkbox-containe a:hover {
+    text-decoration: underline;
+}
+
+.sign-up-form button {
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.sign-up-form button:hover {
+    background-color: #0056b3;
+}
+
+@media (min-width: 600px) {
+    .containe {
+        flex-direction: row; 
+    }
+
+    .logo img {
+        margin-right: 40px;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 599px) {
+    .containe {
+        flex-direction: column; 
+    }
+
+    .logo img {
+        width: 50%; 
+        margin-bottom: 20px;
+    }
+
+    .form-containe {
+        padding: 20px;
+    }
+
+    .sign-up-form h2 {
+        font-size: 20px;
+    }
+
+    .sign-up-form input {
+        padding: 8px;
+    }
+
+    .sign-up-form button {
+        padding: 12px;
+        font-size: 14px;
+    }
+    
+}
+
+.containe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    flex-wrap: wrap; 
+
+}
+.containe .logo img {
+   
+    width: 80%;
+   
+
+}
+
+.form-containe {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 400px; 
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.checkbox-containe {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.checkbox-containe input {
+    margin-right: 10px;
+}
+
+.checkbox-containe label {
+    font-size: 14px;
+}
+
+.links a {
+    color: #0056b3;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Media queries for responsive design */
+@media (min-width: 600px) {
+    .containe {
+        flex-direction: row; /* Horizontal layout for larger screens */
+    }
+
+    .logo img {
+        margin-right: 40px;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 599px) {
+    .containe {
+        flex-direction: column; /* Vertical layout for smaller screens */
+    }
+
+    .logo img {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    .form-containe {
+        padding: 20px;
+    }
+
+    .login-form h2 {
+        font-size: 20px;
+    }
+
+    .login-form input {
+        padding: 8px;
+    }
+
+    .login-form button {
+        padding: 12px;
+        font-size: 14px;
+    }
 }

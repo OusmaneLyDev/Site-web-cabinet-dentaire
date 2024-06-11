@@ -102,7 +102,7 @@ header button {
     /* text-align: center; */
     text-decoration: 0;
     font-size: 18px;
-    background-color: #007bff;
+    background-color: #516EFF;
     color: #f8fafc;
     width: 100px;
     height: 50px;
@@ -160,7 +160,7 @@ header button {
   
   .button1 {
     cursor: pointer;
-    background-color: #007bff;
+    background-color: #516EFF;
     color: white;
     border-radius: 8px;
     width: 180px;
@@ -845,6 +845,7 @@ border-color: #000;
 #reservation form input[type="submit"]{
     padding: 15px;
     width: 437px;
+    margin-top: 20px;
 
     cursor: pointer;
 
@@ -1412,6 +1413,7 @@ border-color: #000;
     .container {
         margin-top: 20px;
         padding: 0 2%;
+        
     }
 
     .container .left h1 {
@@ -1424,7 +1426,13 @@ border-color: #000;
     }
 
     .history img {
-        width: 100%;
+        width: 80%;
+        margin-left: 25px;
+    }
+    .hist {
+        margin-left: 25px;
+     
+
     }
 
     .history h3, .history p {
@@ -1573,17 +1581,22 @@ border-color: #000;
     #reservation form,
     #reservation .phone,
     #reservation .message {
-        padding: 15px;
+        padding: 12px;
+        width: 80%;
     }
 
     #reservation .message input {
         padding: 15px;
     }
 
-    #reservation form input[type="submit"] {
-        width: 100%;
+  
+}
+
+@media (max-width: 576px){
+    .doctors .right h1 {
+        font-size: 30px;
+
     }
-    
 }
 
 @media (max-width: 1200px) {
@@ -1806,6 +1819,13 @@ border-color: #000;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
+    margin-bottom: 20px;
+}
+.sign-up-form a {
+    text-align: center;
+}
+ .containe a {
+    text-align: center;
 }
 
 .sign-up-form button:hover {
@@ -1828,14 +1848,19 @@ border-color: #000;
         flex-direction: column; 
     }
 
-    .logo img {
-        width: 50%; 
-        margin-bottom: 20px;
+    .logo2 img {
+        width: 40%; 
+        margin-top: 20px;
+        align-items: center;
+        margin-left: 140px;
+        
     }
 
     .form-containe {
         padding: 20px;
     }
+
+   
 
     .sign-up-form h2 {
         font-size: 20px;
@@ -1848,7 +1873,9 @@ border-color: #000;
     .sign-up-form button {
         padding: 12px;
         font-size: 14px;
+        margin-bottom: 20px;
     }
+    
     
 }
 
@@ -1934,6 +1961,7 @@ border-color: #000;
     font-size: 16px;
     cursor: pointer;
 }
+
 
 .login-form button:hover {
     background-color: #0056b3;

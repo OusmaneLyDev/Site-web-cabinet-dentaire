@@ -17,10 +17,14 @@
             <li><a href="#our">About Us</a></li>
             <li><a href="#consult">Appointment</a></li>  
             <li><a href="sing-up.html">Sing up</a></li>
+            <a href="login.html"><button class="btn-login">Login</button></a>
         </ul>
 
         
-        <a href="login.html"><div class="toggle_menu"><button class="btn-login">Login</button></div></a>
+        
+
+       
+        <div class="toggle_menu"></div>
     </header>
 
     <section id="home">
@@ -48,11 +52,11 @@
                 <h2>Call for appointment</h2>
             </div>
   
-            <div class="service1">
+            <div class="service">
               <img src="images/Date.png" alt="dates">
               <h2>Get a  date & serial</h2>
           </div>
-          <div class="service2">
+          <div class="service">
               <img src="images/Consult.png" alt="consult">
               <h2>Consult your dentist</h2>
           </div>
@@ -185,10 +189,12 @@
         <div class="history">
             <img src="images/types-dentistry-specialties-feature.png" alt="smiley">
             <div>
-            <h3>Our history</h3>
-            <p>Dentics is a well-known name in dental and oral care in New York. <br>
+            <div class="hist">
+                <h3>Our history</h3>
+                <p>Dentics is a well-known name in dental and oral care in New York. <br>
                 The journey of this institution started in 1990 under the hands of <br> Dr. Jonathon Doe, Gold Medalist of Harvard University. Dentics <br> dental center has been leading the way in dental treatment in <br>
                 USA for more than 30 years in keeping with the evolution of time <br> and the modernization of the era.</p>
+            </div>
             </div>
         </div>
     </section>
@@ -289,14 +295,16 @@
 
 
 <section id="souscribe">
-    <div>
-        <h1>Souscribe to our newsletter</h1>
-    <div>
-    <form action="#" method="input">
-        <input class="put1" name="first-name" type="text" id="first-name" placeholder="First name">
-        <input class="put1" name="email" type="text" id="email" placeholder="Email address">
-        <button>Subscrone Now</button>
-    </form>
+    <div class="souscr">
+       
+            <h1>Souscribe to our newsletter</h1>
+        
+        <form action="#" method="input">
+            <input class="put1" name="first-name" type="text" id="first-name" placeholder="First name">
+            <input class="put1" name="email" type="text" id="email" placeholder="Email address">
+            <input type="submit" value="Suscribe now">
+        </form>
+    </div>
     
 
 
@@ -304,51 +312,55 @@
 
 <!-- footer de page -->
 
+
 <footer>
-   
-    <div class="partie1">
-        <div class="logo">
-            <img src="images/Logo.png" alt="logo">
+    <div class="footer">
+        <div class="section">
+            <img src="images/Logo.png" alt="">
+            <p>Dentics is a well-known name in <br>
+                 dental and oral care in New <br> York. The journey of this <br> institution started in 1990.</p>
         </div>
-        <p>Dentics is a well-known name in <br> dental and oral care in New <br>York.
-        The journey of this  <br> institution started in 1990</p>
+        <div class="section">
+            <p>We are welcoming you</p>
+            <p class="want">Want to visit <br> our clinic?</p>
+            <p>Saturday - Thursday</p>
+            <p>10 am - 9 pm</p>
+        </div>
+        <div class="section">
+            <p>Important links</p>
+            <div class="important-links">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+                <a href="#">Career</a>
+                <a href="#">Support</a>
+                <a href="#">Privacy policy</a>
+            </div>
+        </div>
+        <div class="section">
+            <p>Say hello to us</p>
+            <div class="contact-info">
+                <p>hello@reallygreatsite.com</p>
+                <p>123 Anywhere St., Any City, NY 39200</p>
+            </div>
+        </div>
     </div>
-    <div class="partie2">
-        <h4>We are welcoming you</h4>
-        <p><span>want to visite</span> <br> our clinic</p>
-        <h3>Saturday-Thursday <br>
-        10 am- 9 pm</h3>
-       
+    <div class="copyright">
+        © 2001-2022, All Rights Reserved
     </div>
-    <div class="partie3">
-        <h6>important link</h6>
-        <h3><a href="https" class="Twitter-link">Twitter</a></h3>
-        <h3><a href="https://www.facebook.com/" class="facebook-link">Facebook</a></h3>
-        <h3><a href="https" class="Instagram-link">Instagram</a></h3>
-        
-
-
-    </div>
-    <div class="partie4">
-        <h3><a href="#">Career</a></h3>
-        <h3><a href="#">Support</a></h3>
-        <h3><a href="#">Privacy policy</a></h3>
-        
-        
-    </div>
-    <div class="partie5">
-        <h6>Say hello to us</h6>
-       <h4>hello@reallygreatsite.com</h4>
-        <p>Adress</p>
-        <h3>123 Anywhere St., Any <br>City, NY 39200</h3>  
-    </div>
-    
 </footer>
-<div class="terminal">
-    <h2>© 2021-2022, All Rights Reserved</h2>
-</div>
 
 
+
+<script>
+    var small_menu = document.querySelector('.toggle_menu')
+    var menu = document.querySelector('.menu')
+
+    small_menu.onclick = function(){
+         small_menu.classList.toggle('active');
+         menu.classList.toggle('responsive');
+    }
+</script>
 
 
 

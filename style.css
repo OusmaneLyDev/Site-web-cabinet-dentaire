@@ -39,9 +39,9 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    background-color: rgba(255 255 255 /0.9);
+    background-color: white;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    z-index: 10;
+    z-index: 20;
     
 }
 .menu {
@@ -108,7 +108,7 @@ header button {
     height: 50px;
     border-radius: 4px;
     margin-left: 40px;
-    
+    border-radius: 8px;
    
 }
 
@@ -1102,13 +1102,13 @@ input[type="checkbox"]:checked + label::after {
         width: 28px;
         background-color: black;
         border-radius: 6px;
-        box-shadow: 0 10px 0 #27ae60;
+        box-shadow: 0 10px 0 black;
         transform: translateY(-10px);
         transition: 0.5s;
     }
     .toggle_menu.active::before {
         transform: translateY(0) rotate(135deg);
-        box-shadow: 0 0 0 #27ae60
+        box-shadow: 0 0 0 black
     }
     .toggle_menu::after {
         position: absolute;
@@ -1501,16 +1501,16 @@ input[type="checkbox"]:checked + label::after {
         height: auto;
     }
 
-    #reservation form,
+    /* /* #reservation form,
     #reservation .phone,
     #reservation .message {
         max-width: 100%;
         margin: 10px;
-    }
+    } */
 
     #reservation .message input {
         padding: 40px;
-    }
+    } */
 
     #reservation form input[type="submit"] {
         max-width: 100%;

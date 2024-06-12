@@ -47,7 +47,7 @@ header {
 .menu {
     display: flex;
     justify-content: center;
-   
+   align-items: center;
    
    
 }
@@ -666,6 +666,7 @@ section #make {
     text-decoration: 0;
     font-size: 17px;
     color: #007bff;
+    border: 1px solid blue;
    
      
     background-color:transparent;
@@ -697,17 +698,19 @@ section #make {
 
 
 #reservation {
-    margin-left: 10%;
-    margin-right: 10%;
     display: flex;
-    height: 80vh;
-    flex-direction: column;
+  height: 100vh;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
    
 }
 #reservation .image {
     display: flex;
-    height: 500px;
-    border-radius: 20px;
+  height: 500px;
+  border-radius: 20px;
+  width: 50%;
 
 }
 
@@ -715,18 +718,32 @@ section #make {
    border-radius: 20px;
 }
 
+
 #reservation form {
     display: flex;
     background-color: white;
     /* background-color: rgba(0,0,0,0.05); */
-    padding: 25px;
+    padding: 30px;
     border-radius: 6px;
     flex-direction: column;
-    width: 500px;
-    margin-left: 250px;
+    width: 100%;
+    /* margin-left: 250px; */
    
 }
+.form-contener {
+    display: flex;
+    
 
+}
+.order10 {
+    height: 150px;
+    padding-top: 5px;
+}
+.formulaire {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
 input[type="checkbox"] {
     display: none;
 }
@@ -770,8 +787,8 @@ input[type="checkbox"]:checked + label::after {
 .checkbox-container {
     display: flex;
     align-items: center;
-    font-family: Arial, sans-serif; /* Adjust font to match your design */
-    margin: 20px; /* Adjust margin to your needs */
+    font-family: Arial, 
+    /* margin: 20px;  */
 }
 
 #reservation form .phone {
@@ -784,12 +801,13 @@ input[type="checkbox"]:checked + label::after {
 }
 #reservation form  label {
     font-size: 14px;
-    border-color: #000;
+    margin-top: 10px;
    
 }
     #reservation form input {
-border-color: #000;
+
     margin-bottom: 10px;
+    
    padding: 12px;
    border: 1px solid transparent;
    box-shadow: 0 0 10px rgba(0,0,0,0.05);
@@ -1087,7 +1105,7 @@ border-color: #000;
         align-items: center;
         justify-content: center;
         background-color: #fff;
-        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        box-shadow: 0 0 10px black;
         flex-direction: column;
        
     }

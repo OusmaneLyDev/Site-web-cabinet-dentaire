@@ -263,41 +263,54 @@
            
             <img src="images/doctor-with-tablet-computer.jpg" alt="contact">
       
-            <div>
+            <div class="forma">
             <form action="#">
                 <div class="form-contener">
 
                     <div class="droite">
     
                         <div class="formulaire">
-                            <label class="order1" for="name"> Name</label>
-                            <input class="order2" type="text" name="name" id="name" placeholder="Full name" required required pattern="[A-Za-z]{3,}">
-                        </div>
-                        <div class="formulaire">
-                            <label class="order3" for="date"> Date</label>
-                            <input class="order4" type="date" name="date" id="date">
-                        </div>
-                    </div>
-                        <div class="gauche">
-                            <div class="formulaire">
+                            <div class="orde">
+                                <label class="order1" for="name"> Name</label>
+                                <input class="order2" type="text" name="name" id="name" placeholder="Full name" required required pattern="[A-Za-z]{3,}">
+                            </div>
+                            <div class="orde">
                                 <label class="order5" for="telephone"> Phone</label>
                                 <input class="order6" type="tel" name="telephone" id="telephone"  placeholder=" : 123-456-7890" required  name="phoneNumber" pattern="\d{8}" required>
                             </div>
+                        </div>
+                    </div>
+                        
+                            
+                        <!-- </div> -->
+                    <!-- </div> -->
+                        <div class="gauche">
+                            
                             <div class="formulaire">
-                                <label class="order7" for="doctor"> Doctor</label>
-                                <input class="order8" type="text" name="doctor" id="doctor">
+                                <div class="orde">
+                                    <label class="order3" for="date"> Date</label>
+                                    <input class="order4" type="date" name="date" id="date">
+                                </div>
+                                <div class="orde">
+                                    <label class="order7" for="doctor"> Doctor</label>
+                                    <input class="order8" type="text" name="doctor" id="doctor">
+                                </div>
                             </div>
                         </div>
-                </div>
+                
                         <div class="formulaire">
-                            <label class="order9" for="message">Message</label>
-                           <textarea class="order10"  id="message" placeholder="Includ a messagge"></textarea>
+                            <div class="orde">
+                                <label class="order9" for="message">Message</label>
+                                <textarea class="order10"  id="message" placeholder="Includ a messagge"></textarea>
+                            </div>
                         </div>
+                        <div class="orde">
                                 <input class="order11" type="checkbox" id="agree" name="agree">
                                 <label class="order12" for="agree">You agree to our friendly privacy policy.</label>
-                            
-                        <input class="order13" type="submit" name="submit"  value="Confirme Appoinment">
-                
+                        </div> 
+                        <div class="orde">
+                            <input class="order13" type="submit" name="submit"  value="Confirme Appoinment">
+                        </div>
             </form>
                 
     </section>

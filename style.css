@@ -699,25 +699,48 @@ section #make {
 
 #reservation {
     display: flex;
-  height: 100vh;
-  flex-direction: column;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
+    justify-content: center;
+    align-items: center;
    
 }
 #reservation .image {
     display: flex;
-  height: 500px;
-  border-radius: 20px;
-  width: 50%;
+    height: 500px;
+    border-radius: 20px;
+    width: 100%;
+    justify-content: center;
+    gap: 50px;
+  }
+  .forma {
+    width: 40%;
+  }
 
-}
+  /* .image img {
+    width: 40%;
+  } */
 
 #reservation img {
    border-radius: 20px;
 }
+.droite {
+    display: flex;
+    justify-content: center;
+    width: 100%;
 
+}
+.order13 input {
+    width: 100%;
+}
+.gauche {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.orde {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 
 #reservation form {
     display: flex;
@@ -730,20 +753,26 @@ section #make {
     /* margin-left: 250px; */
    
 }
-.form-contener {
-    display: flex;
+#message {
+    text-decoration: none;
+    padding: 10px;
+}
+textarea {
+    resize: none;
+}
+
     
 
-}
+
 .order10 {
     height: 150px;
     padding-top: 5px;
 }
 .formulaire {
     display: flex;
-    flex-direction: column;
-    margin-left: 30px;
-}
+    width: 100%;
+    gap: 20px;
+  }
 input[type="checkbox"] {
     display: none;
 }
@@ -862,7 +891,7 @@ input[type="checkbox"]:checked + label::after {
 }
 #reservation form input[type="submit"]{
     padding: 15px;
-    width: 437px;
+    
     margin-top: 20px;
 
     cursor: pointer;
@@ -1071,7 +1100,7 @@ input[type="checkbox"]:checked + label::after {
         content: "";
         height: 3px;
         width: 28px;
-        background-color: #27ae60;
+        background-color: black;
         border-radius: 6px;
         box-shadow: 0 10px 0 #27ae60;
         transform: translateY(-10px);
@@ -1086,7 +1115,7 @@ input[type="checkbox"]:checked + label::after {
         content: "";
         height: 3px;
         width: 28px;
-        background-color: #27ae60;
+        background-color: black;
         border-radius: 6px;
         transform: translateY(10px);
         transition: 0.5s;
@@ -1595,12 +1624,21 @@ input[type="checkbox"]:checked + label::after {
     #consult .order13{
         order: 13;
     }
+    #reservation form, .formulaire {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 400px;
+    }
 
     #reservation form,
-    #reservation .phone,
-    #reservation .message {
+    #reservation .form-contener, droite, .gauche {
         padding: 12px;
-        width: 80%;
+        width: 100%;
+        
+    }
+    .forma {
+        width: 100%;
     }
 
     #reservation .message input {
